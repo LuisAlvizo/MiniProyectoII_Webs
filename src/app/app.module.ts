@@ -10,6 +10,8 @@ import { VerCitasComponent } from './components/ver-citas/ver-citas.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { DomseguroPipe } from './domseguro.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { AboutComponent } from './components/about/about.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
+    DomseguroPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
