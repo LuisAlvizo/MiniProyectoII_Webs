@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { DomseguroPipe } from './domseguro.pipe';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DomseguroPipe } from './domseguro.pipe';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

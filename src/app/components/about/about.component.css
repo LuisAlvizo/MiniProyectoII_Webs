@@ -1,0 +1,14 @@
+.contenedor{
+    display: flex;
+    text-align: center;
+}
+
+.caja1{
+    height: 50%;
+    width: 50%;
+  }
+  .caja2{
+    height: 50%;
+    width: 50%;
+    font-family : 'Chewy', 'cursive';
+  }
