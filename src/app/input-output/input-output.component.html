@@ -1,0 +1,15 @@
+<div>Estás en la página de <strong>{{texto}}</strong> de nuestra página StayMate</div>
+<!-- <label for="Padre-input"></label>
+<input type="text" id="Padre-input #newPadre">
+<button (click)="addPadre(newPadre.valor)">Dar click si obtuviste un cupón</button> -->
+
+<div class="input-group mt-4">
+    <input #valores type="text" class="form-control">
+    <button
+        (click)="enviarData(valores.value)"
+        class="btn btn-info"
+        type="button"
+    >
+        Dar click en el botón si se ha conseguido el cupón
+    </button>
+</div>

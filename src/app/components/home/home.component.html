@@ -47,5 +47,25 @@
       <div class="contenedor">
         <a mat-flat-button color="primary" routerLink="/alojamientos" target="_blank">Pag Sig.</a> <!--2 Componente-->
       </div>
+
+      
+
+      
+      <div class="card mt-5" *ngIf="mostrarDatos">
+        <div class="card-body">
+          <ul class="list-group">
+            <li *ngFor="let color of arregloColores" class="list-group-item"> 
+              {{color}}
+            </li>
+          </ul>
+          <app-input-output [texto]="diferenteTexto" (eventoEnviarData)="agregarAlArreglo($event)"></app-input-output>
+        </div>
+      </div>
+      
 </body>
+<script type="text/javascript">
+  window.onload = function mostrarDatos(){
+    mostrarDatos=true
+  }
+</script>
 </html>

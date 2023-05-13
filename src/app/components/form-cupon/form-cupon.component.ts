@@ -10,15 +10,22 @@ export class FormCuponComponent {
   firstName: string = '';
   lastName: string = '';
   email: string = '';
+  mostrarDatos:Boolean=false;
+
+  constructor(){
+  }
 
   enviarCupon() {
     if (this.email != '') {
+      localStorage.setItem('mostrarDatos', 'true');
+      this.mostrarDatos=true;
       Swal.fire({
         icon: 'success',
         title: `Cupon enviado al correo ${this.email}`,
         showConfirmButton: false,
         timer: 1500,
       });
+      
     } else {
       Swal.fire({
         icon: 'error',

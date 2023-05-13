@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormCuponComponent } from './components/form-cupon/form-cupon.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {MatButtonModule} from '@angular/material/button';
     AboutComponent,
     DomseguroPipe,
     FormCuponComponent,
+    InputOutputComponent,
   ],
   imports: [
     BrowserModule,

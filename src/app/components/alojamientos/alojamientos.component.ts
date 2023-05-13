@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,9 +6,9 @@ import { Router } from '@angular/router';
   templateUrl: './alojamientos.component.html',
   styleUrls: ['./alojamientos.component.css'],
 })
-export class AlojamientosComponent {
-  constructor(private router: Router) {}
-
+export class AlojamientosComponent{
+  constructor(private router: Router) {
+  }
   listings = [
     {
       id: 0,
